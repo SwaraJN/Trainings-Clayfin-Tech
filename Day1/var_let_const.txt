@@ -1,0 +1,19 @@
+// var let const
+// types of JSVM
+//typeof()
+
+________________________________________________________________________________________________________________________________
+1> Var Let Const
+1.1>Scopes :-   mainly 2 types of scopes > global scope  > function or local scope.
+
+# variable var is an global scope when it is declared outside a fucntion (block)
+
+var name = "sam";
+    function Func() {
+        var Num = "43";
+    }
+Func()
+    console.log(name);
+    console.log(Num)
+    .In these example name is an global scope 
+    .but Num is an block scope and it will show an refference error 
