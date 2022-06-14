@@ -1,0 +1,12 @@
+.Main-div{
+    border:1px solid black;
+    margin: auto;
+    margin-top:250px;
+    width:450px;
+}
+button{
+    background-color:black;
+    padding: 10px 25px;
+    color:white;
+    margin-left: 5px;
+}

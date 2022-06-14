@@ -1,0 +1,27 @@
+#main {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    width: 600px;
+    height: 20px;
+    margin-top: 30px;
+    
+  }
+  #main div{
+        width: 100%;
+        border: 1px solid grey;
+    }
+    .Main-Container{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .Main{
+        /* margin: auto; */
+        height:250px;
+        width:650px;
+        border:1px solid black;
+    }
+#myCheck{
+    padding:5px;
+}

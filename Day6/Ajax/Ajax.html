@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax </title>
+</head>
+<body>
+    <body>
+        <button onclick="makeRequest()">Make a request</button> 
+        <!-- These Onclick fucntion makes a request    -->
+    </body>
+    <script>
+      
+     var httpRequest;
+      function makeRequest(){
+    
+        httpRequest = new XMLHttpRequest();
+    
+        if(!httpRequest){
+            alert('Cannot create an XMLHTTP instance')
+            return false
+        }
+    
+            httpRequest.onreadystatechange = getContents;
+            httpRequest.open('GET','ajax.html');
+            httpRequest.send()
+      }
+    
+      function getContents(){
+        if(httpRequest.readyState == XMLHttpRequest.DONE){
+            if(httpRequest.status == 200){
+                alert(httpRequest.responseText)
+            }else{
+                alert('There was a problem with the request.');
+            }
+        }
+      }
+    
+    </script>
+</body>
+</html>

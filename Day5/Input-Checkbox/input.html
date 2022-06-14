@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="Main">
+    <div class="Main-Container">
+      <input type="text" placeholder="Enter Door Number" id="number" />
+      <input id="DName" type="text" placeholder="Enter Door Name" />
+      <input id="DAddress" type="text" placeholder="Enter Address" />
+      <input type="checkbox" id="myCheck" onclick="Checkbox()" />
+    </div>
+    <div id="container"></div>
+</div>    
+</body>  
+</html>
+<script>
+  const container = document.getElementById("container");
+
+  function Checkbox() {
+    container.innerHTML = "";
+    var checkBox = document.getElementById("myCheck");
+    var DNum = document.getElementById("number").value;
+    let DName = document.getElementById("DName").value;
+    let DAddress = document.getElementById("DAddress").value;
+
+    let name = document.createElement("div");
+    name.innerText = DName;
+    let number = document.createElement("div");
+    number.innerText = DNum;
+    let address = document.createElement("div");
+    address.innerText = DAddress;
+    let mainDiv = document.createElement('div');
+    mainDiv.id="main"
+    mainDiv.append(name, number, address)
+    container.append(mainDiv);
+    if (checkBox.checked == true) {
+      container.style.display = "block";
+    } else {
+      container.style.display = "none";
+    }
+  }
+</script>
