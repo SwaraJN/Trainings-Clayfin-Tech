@@ -1,44 +1,43 @@
-import React from 'react'
+// import React from 'react'
 import './Counter.css'
 
-class Counter extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        count: 0
-      };
+import React from 'react'
+
+ class Counter extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={
+            count:0
+        };
     }
-  
-    increment= () => {
-      this.setState({
-        count: this.state.count + 1
-      });
+    Increase=()=>{
+        this.setState({
+            count:this.state.count + 1 
+        });
     };
-    
-    decrement= () => {
-      this.setState({
-        count: this.state.count - 1
-      });
+    Decrease=()=>{
+        this.setState({
+            count:this.state.count - 1
+        });
     };
-  
-    reset= () => {
-      this.setState({
-        count: 0
-      });
-    };
-  
-    render() {
-      return (
-  
-     <div className="Main-div">
-         <div style={{margin:"auto",border:"1px solid black", borderRadius:"50%",backgroundColor : this.state.count === 0 ? "green" : this.state.count > 0 ? "yellow":"red",width:"250px",height:"250px"}}></div>
-     
-     <button className='inc' onClick={this.increment}>Increment!</button>
-      <button className='dec' onClick={this.decrement}>Decrement!</button>
-      <button className='reset' onClick={this.reset}>Reset</button>
-      <h1>Count: {this.state.count}</h1>
-    </div>
-      );
+    reset=()=>{
+        this.setState({
+            count:0
+        })
     }
-  };
-  export default Counter
+  render() {
+    return (
+      <div className="Main-div">
+         {/* ?= Nullish Operator | It checks first left and then right Value if left is Null then it'll Return the Right side */}
+
+ <div style={{margin:"auto",border:"1px solid black",borderRadius:"50%",backgroundColor: this.state.count === 0 ?"green" :this.state.count >0 ? "yellow":"red",width:"250px",height:"250px"}}></div>                                                          
+ <h1>Count:{this.state.count}</h1>
+        <button onClick={this.Increase}>++</button>
+        <button onClick={this.Decrease}>--</button>
+        <button onClick={this.reset}>reset</button>
+      </div>
+      
+    )
+  }
+}
+export default Counter
