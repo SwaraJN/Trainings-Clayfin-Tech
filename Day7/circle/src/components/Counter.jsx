@@ -1,7 +1,6 @@
 import React from 'react'
 import './Counter.css'
-// export default
- 
+
 class Counter extends React.Component {
     constructor(props) {
       super(props);
@@ -9,7 +8,6 @@ class Counter extends React.Component {
         count: 0
       };
     }
-    // change code below this line
   
     increment= () => {
       this.setState({
@@ -33,7 +31,7 @@ class Counter extends React.Component {
       return (
   
      <div className="Main-div">
-         <div style={{border:"1px solid black", borderRadius:"50%",backgroundColor : this.state.count === 0 ? "green" : this.state.count > 0 ? "yellow":"red",width:"200px",height:"200px"}}></div>
+         <div style={{margin:"auto",border:"1px solid black", borderRadius:"50%",backgroundColor : this.state.count === 0 ? "green" : this.state.count > 0 ? "yellow":"red",width:"250px",height:"250px"}}></div>
      
      <button className='inc' onClick={this.increment}>Increment!</button>
       <button className='dec' onClick={this.decrement}>Decrement!</button>
