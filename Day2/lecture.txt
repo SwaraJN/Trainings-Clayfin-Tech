@@ -1,0 +1,72 @@
+function f(){
+	console.log('hi hello f');
+}
+
+f();
+f1();
+function f1(){
+	console.log('hi hello f1');
+}
+
+function Car(id,name){
+	this.id=id;
+}
+
+
+Arrays:
+
+hetro genous
+var s=[];
+s.push(90);
+console.log(s);
+
+template literals
+
+var name='Ajay'
+
+`welcome's Mr. ${2>3?'hello'}`
+
+  const res=a>b?true:false;
+
+
+`welcome Mr. ${4>3?'hello':'welcome'}`
+
+
+arrow function:
+
+anonymous function:
+
+var f=function (){
+
+	console.log('hi hello');
+}
+
+function func2(myfun){
+	myfun();
+}
+
+func2(f);
+=============================
+var f=function (a,b){
+	console.log(a+b);
+}
+
+function func2(myfun){
+	console.log(myfun);
+	var x=90;
+	var y=900;
+	myfun(x,y);
+}
+
+func2(f);
+
+===========================
+	let f2=()=>{
+		console.log(this);
+	}
+
+function f3(){
+	console.log(this);
+}
+f3();
+f2();

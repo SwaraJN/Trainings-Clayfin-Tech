@@ -1,0 +1,44 @@
+let array=[1,12,3,45,5,67,8];
+undefined
+const [,x,,y,,z,]=array;
+undefined
+z
+67
+let obj={name:"ajay",age:12,city:"Banglore"}
+undefined
+const [name,age,city]=obj;
+VM374:1 Uncaught TypeError: obj is not iterable
+    at <anonymous>:1:23
+(anonymous) @ VM374:1
+const {name,age,city}=obj;
+undefined
+city
+'Banglore'
+const {name,city}=obj;
+undefined
+04:22 PM
+let [name = "Guest", surname = "Anonymous"] = [,"Julius"];
+VM552:1 Uncaught SyntaxError: Identifier 'name' has already been declared
+let [name1 = "Guest", surname1 = "Anonymous"] = [,"Julius"];
+undefined
+name1
+'Guest'
+surname1
+'Julius'
+04:28 PM
+let y=2019;
+VM947:1 Uncaught SyntaxError: Identifier 'y' has already been declared
+let yr=2019;
+undefined
+let day=23;
+undefined
+let month=3;
+undefined
+new Date(yr,month,day);
+Tue Apr 23 2019 00:00:00 GMT+0530 (India Standard Time)
+new Date(2009,20,4);
+Sat Sep 04 2010 00:00:00 GMT+0530 (India Standard Time)
+new Date(2009,20,4)+1
+'Sat Sep 04 2010 00:00:00 GMT+0530 (India Standard Time)1'
+new Date(2009,20,(4+1));
+Sun Sep 05 2010 00:00:00 GMT+0530 (India Standard Time)

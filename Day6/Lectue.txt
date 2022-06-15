@@ -1,0 +1,35 @@
+function display(){
+
+	return (
+//		let elem=React.createElement(3args)
+//		let elem=React.createElement(tag,attr,content)
+		let elem=React.createElement('h1',null,'hi hello');
+		
+	)
+}
+node >16
+npm>6
+
+npm i -g create-react-app
+VS - 
+
+function
+class 
+
+import React, { Component } from 'react';
+class App extends React.Component {
+  u = 90;
+  display() {
+    return 'hi';
+  }
+  render() {
+    var a = 90;
+    return (
+      <div>
+        <h1>{this.display()}</h1>
+        <h2></h2>
+      </div>
+    );
+  }
+}
+export default App;
