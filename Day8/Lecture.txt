@@ -1,0 +1,21 @@
+TODAY'S TOPICS
+props:
+
+	immutable
+	used to share data wioth child comp
+	to access data in child we use this.props.propname
+	React.Children
+
+props drilling
+
+
+state 
+event handling
+
+list and keys
+
+conditional rendering 
+
+
+splitting components
+styling
