@@ -3,7 +3,7 @@ import React, {
 } from "react";
 import Buttons from './buttons';
 import Result from './result';
-// import "./calc.css";
+
 
 class App extends Component {
 
