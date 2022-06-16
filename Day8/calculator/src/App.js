@@ -1,8 +1,8 @@
 import React, {
   Component
 } from "react";
-import Buttons from './buttons';
-import Result from './result';
+import Buttons from './component/buttons';
+import Result from './component/result';
 
 
 class App extends Component {
