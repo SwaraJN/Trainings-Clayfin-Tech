@@ -3,7 +3,7 @@ import Grandchild  from './Grandchild'
 
 
  const Child = (props) => {
-    const{users}=props
+    const{users}=props //Destructuring //props are as objects 
     console.log('users',users)
   return (
     <div>{users.map((e)=>{

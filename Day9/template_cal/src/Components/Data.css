@@ -1,0 +1,13 @@
+/* .images{
+    border:1px solid black;
+   display:flex;
+   flex-flow: row;
+   align-items: center;
+   width: 40%;
+} */
+.Main-Div{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;gap: 5px;
+    
+}

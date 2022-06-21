@@ -1,13 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
-import  Parents  from './components/Parents';
-// import  Destructuring  from './Destructuring';
+import Data from './Components/Data';
 
 function App() {
   return (
     <div className="App">
-      <Parents/>
-      {/* <Destructuring/> */}
+      <Data/>
     </div>
   );
 }
